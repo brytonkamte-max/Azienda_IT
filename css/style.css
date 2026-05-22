@@ -12,14 +12,23 @@ header {
     text-align: center;
 }
 
+main {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)),url("https://img.digital4.biz/wp-content/uploads/2025/02/06144027/Intelligenza-Artificiale-in-Italia-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+    /* Evita che l'immagine di sfondo si ripeta */
+    background-repeat: no-repeat;
+    /* Assicura che il main occupi almeno l'intera altezza della finestra */
+    min-height: 100vh;
+}
+
 footer {
     background-color: #651584;
     color: #fff;
     padding: 10px;
     text-align: center;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
 
 nav {
@@ -54,14 +63,6 @@ nav ul li {
     margin-right: 20px;
 }
 
-.container {
-    display: flex;
-    /* organizza il contenuto in colonna */
-    flex-direction: column;
-    /* centra il contenuto verticalmente e orizzontalmente */
-    align-items: center;
-    padding: 20px;
-}
 
 .form-contatti {
     display: flex;
@@ -70,4 +71,61 @@ nav ul li {
     width: 100%;
     padding: 20px;
 }
+.card-img {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
 
+}
+
+img {
+    width: auto;
+    max-width: 30%;
+    height: auto;
+}
+
+.presentazione {
+    background-color: white;
+    /* organizza il contenuto in colonna */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #6b6a6a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.container-contatti {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-contatti {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+.card-contatti ul li{
+    /* mostra i link in linea */
+    display: inline-block;
+    /* aggiunge spazio tra i link */
+    margin-right: 20px;
+}
+
+form button {
+    background-color: #651584;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

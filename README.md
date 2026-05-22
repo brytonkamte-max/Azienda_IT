@@ -2,4 +2,5 @@
 sito web dell'azienda IT
 
 # TODO: 
-Migliorare pagina Claudio con un card simile agli altri profili 
+-aggiungere una funzione nel file JS per poter gestire il form della pagina di contatti
+-ottimizzare la presentazione visiva delle pagine
